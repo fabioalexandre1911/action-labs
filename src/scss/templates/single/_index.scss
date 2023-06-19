@@ -1,0 +1,27 @@
+.themeSingle-content{
+    padding: 90px 0;
+    background: var(--colorBack);
+    color: #525252;
+    &__contents {
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+    &__thumbnail{
+        width: 100%;
+        background: var(--colorWhite);
+        
+        img{
+            width: 50%;
+            height: auto;
+        }
+        p{
+            background:var(--colorWhite);
+        }
+    }
+    &__htmlchars{
+        background:var(--colorWhite);
+        color: #525252;
+        ;
+    }
+}

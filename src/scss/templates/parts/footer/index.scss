@@ -1,0 +1,10 @@
+.themeFooter{
+    background: var(#05CFFC);
+
+    &__copyright{
+        width: 85%;
+    }
+}
+.themeFooter__copyright-text{
+    text-align: right;
+}

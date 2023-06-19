@@ -1,0 +1,352 @@
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/theme-main.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/**
+* VARIABLES
+*/
+/** VARIABLES **/
+:root {
+  /** COLORS **/
+  --colorMain:#05CFFC;
+  --colorSupport:#ffffff;
+  --colorCloud:#01758D;
+  --colorText:#666666;
+  --colorWhite:#ffffff;
+  --colorBack:#E5E5E5;
+  /** FONTS **/
+  --fontMain:"Avenir", sans-serif;
+}
+
+/**
+* RESET
+*/
+/** DOCTOR **/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/** CUSTOM **/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--fontMain);
+}
+
+/**
+* COMPONENTS
+*/
+.themeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--colorMain);
+  color: var(--colorWhite);
+  padding: 10px 5px;
+}
+.themeContainer__center {
+  width: 90%;
+}
+
+.themeHeading {
+  margin-top: -5px;
+  width: 100%;
+  background: var(--colorWhite);
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.themeGrid {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.themeGrid__item {
+  width: 31, 55%;
+  margin-right: 20px;
+}
+.themeGrid__item_thumbnail {
+  width: 100%;
+}
+.themeGrid__item_thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.themeGrid__item-category {
+  position: absolute;
+  z-index: 2;
+  margin-top: -260px;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 4px 0 0 0;
+  background: #FFFFFF;
+  border-radius: 90px;
+}
+.themeGrid__item-category a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.themeGrid__item-title {
+  font-size: medium;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.themeGrid__item-title a {
+  text-decoration: none;
+  color: #01758D;
+}
+
+.post-categories ul {
+  width: 100%;
+}
+.post-categories li {
+  text-align: center;
+  width: 80px;
+  height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  list-style: none;
+}
+
+/**
+* TEMPLATES
+*/
+/**
+* TEMPLATES / PARTS
+*/
+/**
+* TEMPLATES / HEADER
+*/
+.themeHeader {
+  position: absolute;
+  top: 19, 93%;
+  left: 4, 29%;
+  right: 4, 99%;
+  bottom: 25, 96%;
+  z-index: 2;
+  padding: 25px 0;
+}
+.themeHeader__contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.themeHeader__logo h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--colorWhite);
+}
+.themeHeader__navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.themeHeader__navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.themeHeader__navigation ul li:not(:last-of-type) {
+  margin-right: 40px;
+}
+.themeHeader__navigation ul a {
+  font-size: 16px;
+  color: #01758D;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  border-radius: 100px;
+  height: 37px;
+  width: 97px;
+}
+
+/**
+* TEMPLATES / FOOTER
+*/
+.themeFooter {
+  background: var(#05CFFC);
+}
+.themeFooter__copyright {
+  width: 85%;
+}
+
+.themeFooter__copyright-text {
+  text-align: right;
+}
+
+/**
+* TEMPLATES / HOME
+*/
+/**
+* TEMPLATES / HOME / HERO
+*/
+.themeHeader {
+  height: 60px;
+  width: 100%;
+  background: var(--colorMain);
+}
+
+.themeHomeHero {
+  height: 465px;
+  width: 100%;
+  background: var(--colorText);
+}
+.themeHomeHero__title {
+  font-size: 39px;
+  color: beige;
+}
+
+/**
+* TEMPLATES / HOME / BLOG
+*/
+.themeHomeBlog {
+  position: relative;
+  z-index: 1;
+  background: var(--colorBack);
+  margin-top: -5px;
+}
+
+/**
+* TEMPLATES / ARCHIVE
+*/
+/**
+* TEMPLATES / SINGLE
+*/
+.themeSingle-content {
+  padding: 90px 0;
+  background: var(--colorBack);
+  color: #525252;
+}
+.themeSingle-content__contents {
+  width: 60%;
+  margin: 0 auto;
+}
+.themeSingle-content__thumbnail {
+  width: 100%;
+  background: var(--colorWhite);
+}
+.themeSingle-content__thumbnail img {
+  width: 50%;
+  height: auto;
+}
+.themeSingle-content__thumbnail p {
+  background: var(--colorWhite);
+}
+.themeSingle-content__htmlchars {
+  background: var(--colorWhite);
+  color: #525252;
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,18 @@
+.themeHeader{
+    height: 60px;
+    width: 100%;
+    background: var(--colorMain);
+}
+.themeHomeHero{
+    height: 465px;
+    width: 100%;
+    background: var(--colorText);
+    &__title{
+        font-size: 39px;
+        color: beige;
+        
+    }
+    
+    
+}
+
